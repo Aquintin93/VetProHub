@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Estilo personalizado para TextInputLayout con borde más grueso -->
+    <style name="CustomTextInputLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">@color/black</item> <!-- Color del borde -->
+        <item name="boxStrokeWidth">4dp</item> <!-- Ancho del borde aumentado para mayor visibilidad -->
+    </style>
+
+    <!-- Estilo base para TextButton con sombra y fondo más oscuro -->
+    <style name="CustomTextButton" parent="Widget.Material3.Button.TextButton">
+        <item name="android:background">@drawable/button_background</item> <!-- Fondo personalizado -->
+        <item name="android:textColor">@color/black</item> <!-- Color de texto -->
+        <item name="android:elevation">4dp</item> <!-- Elevación para la sombra -->
+    </style>
+
+        <!-- Estilo para el AppBarOverlay -->
+        <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+        <!-- Estilo para el PopupOverlay -->
+        <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+        <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+            <!-- Usa aquí los colores que definiste -->
+            <item name="colorPrimary">@color/colorPrimary</item>
+            <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+            <item name="colorAccent">@color/colorAccent</item>
+            <item name="android:textColor">@color/colorText</item>
+            <item name="android:windowBackground">@color/background</item>
+        </style>
+
+</resources>

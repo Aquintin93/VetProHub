@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "636347031274",
+    "project_id": "vetprohub-918ce",
+    "storage_bucket": "vetprohub-918ce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:636347031274:android:d4a432eb1ee5e54e584193",
+        "android_client_info": {
+          "package_name": "paquete.app.vetprohub"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbDf4tIeAnmfbLy7HPos7wN1o9albU7q8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

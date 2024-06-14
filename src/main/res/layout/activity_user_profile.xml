@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/wallpaper"
+    android:padding="16dp"
+    tools:context=".view.UserProfileActivity">
+
+    <!-- Logo y título -->
+    <ImageView
+        android:id="@+id/ivUserProfileLogo"
+        android:layout_width="159dp"
+        android:layout_height="178dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/logo_vet_prohub" />
+
+    <TextView
+        android:id="@+id/tvMenuTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="Perfil de Usuario"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- ScrollView para hacer desplazable el contenido -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Campos de usuario -->
+            <EditText
+                android:id="@+id/etUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:hint="Nombre"
+                android:inputType="textPersonName"
+                android:drawableStart="@drawable/ic_person"
+                android:drawablePadding="10dp"
+                android:padding="12dp"
+                android:layout_marginTop="16dp" />
+
+            <EditText
+                android:id="@+id/etUserSurname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:hint="Apellidos"
+                android:inputType="textPersonName"
+                android:drawableStart="@drawable/ic_person"
+                android:drawablePadding="10dp"
+                android:padding="12dp"
+                android:layout_marginTop="8dp" />
+
+            <!-- Contenedor para los campos de los animales -->
+            <LinearLayout
+                android:id="@+id/animalContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Botón para agregar más animales -->
+    <Button
+        android:id="@+id/btnAddAnimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Añadir Animal"
+        android:layout_marginTop="16dp" />
+
+    <!-- Botón de Guardar -->
+    <Button
+        android:id="@+id/btnSaveUserProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Guardar"
+        android:layout_marginTop="16dp" />
+
+    <!-- Botón para volver al menú -->
+    <Button
+        android:id="@+id/btnBackToMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Volver al Menú"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>

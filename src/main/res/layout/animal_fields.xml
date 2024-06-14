@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <EditText
+        android:id="@+id/etPetName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre del Animal"
+        android:inputType="textPersonName"
+        android:drawableStart="@drawable/ic_age"
+        android:drawablePadding="10dp"
+        android:padding="12dp" />
+
+    <EditText
+        android:id="@+id/etPetSpecies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Especie del Animal"
+        android:inputType="text"
+        android:drawableStart="@drawable/ic_age"
+        android:drawablePadding="10dp"
+        android:padding="12dp"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/etPetAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Edad del Animal"
+        android:inputType="number"
+        android:drawableStart="@drawable/ic_age"
+        android:drawablePadding="10dp"
+        android:padding="12dp"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/btnDeleteAnimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eliminar Animal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>

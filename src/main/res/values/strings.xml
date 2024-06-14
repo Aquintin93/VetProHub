@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">VetProHub</string>
+    <string name="login_activity_label">Inicio de Sesión</string>  <!-- Título para la actividad de login -->
+    <string name="hint_email">Correo electrónico</string>  <!-- para el campo de email -->
+    <string name="hint_password">Contraseña</string>  <!-- para el campo de contraseña -->
+    <string name="password_mismatch">Las contraseñas no coinciden</string>
+    <string name="select_animal_prompt">Seleccione un animal</string><!-- para el campo de seleccione un animal -->
+    <string name="ok">Iniciar sesión</string>  <!-- Texto del botón de login -->
+    <string name="go_to_registration">Registrarse</string>  <!-- Texto del botón para ir a la pantalla de registro -->
+    <string name="forgot_password">¿Olvidaste tu contraseña?</string>  <!-- Texto del botón para recuperar la contraseña -->
+    <string name="logo_description">Logo del Hospital Veterinario</string>  <!-- Descripción del contenido para accesibilidad -->
+    <string name="invalid_email">Correo electrónico no válido</string>
+    <string name="password_requirements">La contraseña debe tener al menos 6 caracteres, incluir una letra mayúscula y un número.</string>
+    <string name="register">Registrarse</string>  <!-- Texto del botón para ir a la pantalla de registro -->
+    <string name="input_email_for_reset">Por favor, introduce tu correo electrónico para restablecer la contraseña.</string>
+    <string name="go_to_login">Ir al Login</string>
+    <string name="hint_password_confirm">Confirmar Contraseña</string>
+    <string name="helperText_password">La contraseña debe tener al menos 6 caracteres, incluir una letra mayúscula y un número.</string>
+    <string name="helperText_email">Introduce un email válido</string>
+    <string name="reset_password">Resetear contraseña</string>
+    <string name="helperText_email_reset">Introduce tu correo electrónico para restablecer la contraseña</string>
+    <string name="menu_history">Historial Clínico</string>
+    <string name="menu_calendar">Calendario de Citas</string>
+    <string name="menu_manage_vets">Gestionar Veterinarios</string>
+    <string name="menu_manage_animals">Gestionar Animales</string>
+    <string name="delete">Eliminar</string>
+    <string name="reset_email_sent">Enlace de restablecimiento enviado a su correo electrónico.</string>
+    <string name="reset_email_failed">No se ha podido enviar el correo electrónico de restablecimiento: </string>
+
+
+</resources>

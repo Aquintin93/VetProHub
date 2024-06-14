@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/wallpaper"
+    tools:context=".view.EmployeeMenuActivity">
+
+    <TextView
+        android:id="@+id/tvEmployeeMenuTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menú del Empleado"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnEmployeeProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Perfil"
+        android:layout_marginTop="16dp" />
+
+
+    <Button
+        android:id="@+id/btnEmployeeCitations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Citas"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnViewCitations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver Citas"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cerrar Sesión"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

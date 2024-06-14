@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/tvOwnerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Owner Name"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:enabled="false"
+        android:fontFamily="@font/roboto"/>
+
+    <TextView
+        android:id="@+id/tvPetName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pet Name"
+        android:textColor="@android:color/black"
+        android:enabled="false"
+        android:fontFamily="@font/roboto"/>
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/roboto"/>
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/roboto"/>
+
+    <TextView
+        android:id="@+id/tvReason"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reason"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/roboto"/>
+
+    <TextView
+        android:id="@+id/tvEmployeeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Employee Name"
+        android:textColor="@android:color/black"
+        android:enabled="false"
+        android:fontFamily="@font/roboto"/>
+
+    <TextView
+        android:id="@+id/tvEmployeeSpecialty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Employee Specialty"
+        android:textColor="@android:color/black"
+        android:enabled="false"
+        android:fontFamily="@font/roboto"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Editar" />
+
+        <ImageButton
+            android:id="@+id/btnDelete"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="@string/delete"
+            android:src="@drawable/ic_delete" />
+    </LinearLayout>
+</LinearLayout>

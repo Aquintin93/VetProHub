@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper"
+    android:padding="16dp"
+    tools:context=".view.RegistrationActivity">
+
+    <!-- ImageView para mostrar el logo de la aplicación -->
+    <ImageView
+        android:id="@+id/ivLogoRegistration"
+        android:layout_width="295dp"
+        android:layout_height="183dp"
+        android:layout_marginTop="52dp"
+        android:src="@drawable/logo_vet_prohub"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Campo de texto para el email con icono y ayuda visual -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilEmailRegistration"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_email"
+        app:endIconMode="clear_text"
+        app:helperText="@string/helperText_email"
+        app:startIconDrawable="@drawable/ic_contact_mail"
+        app:layout_constraintTop_toBottomOf="@id/ivLogoRegistration"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.8"
+        android:layout_marginTop="24dp">
+
+        <!-- TextInputEditText con padding para evitar superposición de texto e icono -->
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEmailRegistration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:paddingStart="48dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Campo de texto para la contraseña con icono y ayuda visual -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilPasswordRegistration"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_password"
+        app:endIconMode="password_toggle"
+        app:startIconDrawable="@drawable/ic_lock"
+        app:helperText="@string/helperText_password"
+        app:layout_constraintTop_toBottomOf="@id/tilEmailRegistration"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.8"
+        android:layout_marginTop="16dp">
+
+        <!-- TextInputEditText con padding para evitar superposición de texto e icono -->
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPasswordRegistration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:paddingStart="48dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Campo de texto para la confirmación de la contraseña con icono y ayuda visual -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilPasswordConfirmRegistration"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_password_confirm"
+        app:endIconMode="password_toggle"
+        app:startIconDrawable="@drawable/ic_lock"
+        app:layout_constraintTop_toBottomOf="@id/tilPasswordRegistration"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.8"
+        android:layout_marginTop="16dp">
+
+        <!-- TextInputEditText con padding para evitar superposición de texto e icono -->
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPasswordConfirmRegistration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:paddingStart="48dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Botón para enviar el formulario de registro -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnRegistrationRegistration"
+        style="@style/Widget.Material3.Button.ElevatedButton.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        app:icon="@drawable/ic_check"
+        app:layout_constraintTop_toBottomOf="@id/tilPasswordConfirmRegistration"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <!-- Botón para ir a la pantalla de inicio de sesión -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnLoginRegistration"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/go_to_login"
+        app:layout_constraintTop_toBottomOf="@id/btnRegistrationRegistration"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
